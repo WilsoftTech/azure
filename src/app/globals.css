@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #122b43;
+  --color-border: #dce3e9;
+  --color-ring: #367ddd;
+  --color-muted-foreground: #647382;
+  --color-accent: #eaf2f8;
+  --radius-lg: 0;
+}
+
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body { margin: 0; background: #fff; color: #122b43; }
+* { border-color: #dce3e9; }
+button, input, textarea, select { font: inherit; }
+:focus-visible { outline: 2px solid #367ddd; outline-offset: 3px; }
+::selection { background: #c9e2f7; color: #122b43; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
